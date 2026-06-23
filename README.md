@@ -25,5 +25,7 @@
 - 2교시: html 작성, if-elif-else를 이용한 datetime 작성
 - 3교시: github.io 생성
 - 4교시: odd if elif 판별, 삼항 연산자, False 변환 예시
-- 5교시: list, list 바인딩
-- 6교시: 
+- 5교시: list, list 바인딩, 메소드, pyi
+- 6교시: list method(pop, del, remove)
+- 7교시: for문 학습, c언어 스타일 for문과 python스타일 for문 비교, enumerate, zip
+- 8교시: 
