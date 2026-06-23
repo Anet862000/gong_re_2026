@@ -10,13 +10,13 @@
 2026-06-22
 
 \
-1교시: 오리엔테이션\
-2교시: wsl2 설치, vscode설치\
-3교시: git 설치, github계정 찾기, github repository 만들기\
-4교시: python 기초\
-5교시: print 함수 해석\
-6교시: 변수와 자료형\
-7교시: 연산자와 표현식, input 함수 해석\
-8교시: 문자열 f-string, format
+-1교시: 오리엔테이션\
+-2교시: wsl2 설치, vscode설치\
+-3교시: git 설치, github계정 찾기, github repository 만들기\
+-4교시: python 기초\
+-5교시: print 함수 해석\
+-6교시: 변수와 자료형\
+-7교시: 연산자와 표현식, input 함수 해석\
+-8교시: 문자열 f-string, format
 
 ---
