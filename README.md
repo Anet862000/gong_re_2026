@@ -24,4 +24,4 @@
 - 1교시: 자기소개 작성, 비교연산자
 - 2교시: html 작성, if-elif-else를 이용한 datetime 작성
 - 3교시: github.io 생성
-- 4교시: odd if elif 판별
+- 4교시: odd if elif 판별, 삼항 연산자, False 변환 예시
