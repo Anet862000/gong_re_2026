@@ -1,0 +1,10 @@
+[project]
+name = "autocar-webview"
+version = "0.1.0"
+description = "Webview UI for monitoring autocar status"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1.0",
+    "pywebview>=6.0",
+]

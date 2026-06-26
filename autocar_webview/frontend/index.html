@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autocar Status</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="shell">
+        <section class="topbar">
+            <div>
+                <p class="eyebrow">Live Monitor</p>
+                <h1>Autocar Status</h1>
+            </div>
+            <div class="actions">
+                <button id="toggleAutonomy" type="button">Autonomy</button>
+                <button id="resetFaults" type="button">Reset Faults</button>
+                <button id="emergencyStop" type="button" class="danger">E-Stop</button>
+            </div>
+        </section>
+
+        <section class="status-strip">
+            <div class="pill" id="connectionPill">Connecting</div>
+            <div class="pill" id="modePill">Manual</div>
+            <div class="pill" id="estopPill">E-Stop Clear</div>
+        </section>
+
+        <section class="dashboard">
+            <article class="hero-panel">
+                <div class="speed-wrap">
+                    <span id="speedValue">0.0</span>
+                    <span>km/h</span>
+                </div>
+                <div class="target">Target <strong id="targetSpeed">0.0</strong> km/h</div>
+                <div class="progress">
+                    <div id="routeProgress"></div>
+                </div>
+                <p id="routeLabel">Route pending</p>
+            </article>
+
+            <article class="metric">
+                <span>Battery</span>
+                <strong id="battery">--%</strong>
+            </article>
+            <article class="metric">
+                <span>Steering</span>
+                <strong id="steering">-- deg</strong>
+            </article>
+            <article class="metric">
+                <span>Throttle</span>
+                <strong id="throttle">--%</strong>
+            </article>
+            <article class="metric">
+                <span>Brake</span>
+                <strong id="brake">--%</strong>
+            </article>
+            <article class="metric">
+                <span>GPS</span>
+                <strong id="gps">--</strong>
+            </article>
+            <article class="metric">
+                <span>Lidar</span>
+                <strong id="lidar">--</strong>
+            </article>
+            <article class="metric">
+                <span>Camera</span>
+                <strong id="camera">--</strong>
+            </article>
+        </section>
+
+        <section class="details">
+            <article>
+                <h2>Position</h2>
+                <p id="position">--</p>
+            </article>
+            <article>
+                <h2>Faults</h2>
+                <ul id="faultList"></ul>
+            </article>
+            <article>
+                <h2>Updated</h2>
+                <p id="updatedAt">--</p>
+            </article>
+        </section>
+    </main>
+    <script src="/app.js"></script>
+</body>
+</html>
