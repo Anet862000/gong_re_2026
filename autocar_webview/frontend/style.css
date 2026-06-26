@@ -46,7 +46,7 @@ button.danger {
 .topbar,
 .status-strip,
 .dashboard,
-.lidar-panel,
+.sensor-grid,
 .details {
     display: grid;
     gap: 16px;
@@ -90,7 +90,7 @@ h2 {
 .pill,
 .metric,
 .hero-panel,
-.lidar-panel,
+.sensor-panel,
 .details article {
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 8px;
@@ -181,7 +181,12 @@ h2 {
     font-size: 28px;
 }
 
-.lidar-panel {
+.sensor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 16px;
+}
+
+.sensor-panel {
     margin-top: 16px;
     padding: 18px;
 }
@@ -198,12 +203,22 @@ h2 {
     font-size: 14px;
 }
 
-#lidarCanvas {
+#lidarCanvas,
+#cameraCanvas {
     width: 100%;
-    aspect-ratio: 820 / 360;
+    aspect-ratio: 820 / 420;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 6px;
     background: #10161b;
+}
+
+#lidarCanvas {
+    cursor: grab;
+    touch-action: none;
+}
+
+#lidarCanvas:active {
+    cursor: grabbing;
 }
 
 .details {
@@ -234,7 +249,8 @@ h2 {
     .topbar,
     .dashboard,
     .details,
-    .status-strip {
+    .status-strip,
+    .sensor-grid {
         grid-template-columns: 1fr;
     }
 

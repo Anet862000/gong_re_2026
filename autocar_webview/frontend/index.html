@@ -69,15 +69,28 @@
             </article>
         </section>
 
-        <section class="lidar-panel">
-            <div class="section-head">
-                <div>
-                    <p class="eyebrow">Lidar Scan</p>
-                    <h2>Forward Obstacle View</h2>
+        <section class="sensor-grid">
+            <article class="sensor-panel">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">Camera</p>
+                        <h2>Front Camera</h2>
+                    </div>
+                    <strong id="cameraSummary">Standby</strong>
                 </div>
-                <strong id="lidarSummary">-- points</strong>
-            </div>
-            <canvas id="lidarCanvas" width="820" height="360"></canvas>
+                <canvas id="cameraCanvas" width="820" height="420"></canvas>
+            </article>
+
+            <article class="sensor-panel">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">Lidar 3D</p>
+                        <h2>Point Mapping</h2>
+                    </div>
+                    <strong id="lidarSummary">-- nodes</strong>
+                </div>
+                <canvas id="lidarCanvas" width="820" height="420"></canvas>
+            </article>
         </section>
 
         <section class="details">
